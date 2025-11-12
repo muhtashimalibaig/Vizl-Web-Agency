@@ -17,16 +17,16 @@ const Footer = () => {
             presence and credibility.
           </p>
           <div className='flex mt-6 space-x-4'>
-            <a href='#'>
+            <a href='https://www.facebook.com/profile.php?id=61583851104076'>
               <Facebook size={20} className='hover:text-blue-500' />
             </a>
             <a href='#'>
               <Twitter size={20} />
             </a>
-            <a href='#'>
+            <a href='www.linkedin.com/in/vizlweb-muhtashim-baig-9b1201396'>
               <Linkedin size={20} className='hover:text-blue-900' />
             </a>
-            <a href='#'>
+            <a href='https://www.instagram.com/vizl_web_agency/'>
               <Instagram size={20} className='hover:text-pink-600' />
             </a>
           </div>
@@ -50,6 +50,9 @@ const Footer = () => {
             </li>
             <li>
               <Link href={"/contact"}>Contact</Link>
+            </li>
+            <li>
+              <Link href={"/faq"}>FAQ</Link>
             </li>
           </ul>
         </div>
@@ -76,9 +79,10 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className='text-xl font-semibold mb-4'>Contact</h3>
-          <p className='text-gray-400'>1234 Web Street, Tech City, Country</p>
-          <p className='mt-2 text-gray-400'>Email: info@vizlweb.com</p>
-          <p className='mt-2 text-gray-400'>Phone: +123 456 7890</p>
+          <p className='mt-2 text-gray-400'>
+            Email: muhtashimmughal5@gmail.com
+          </p>
+          <p className='mt-2 text-gray-400'>Phone: 0328 4202722</p>
         </div>
       </div>
 

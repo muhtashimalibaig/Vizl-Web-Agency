@@ -78,6 +78,8 @@ const ShowCase = () => {
             <Image
               src={src}
               alt={`Card ${index + 1}`}
+              height={300}
+              width={300}
               className='rounded-md mb-4 w-full h-[250px] sm:h-[300px] md:h-[350px] object-cover'
             />
             <h3 className='text-xl sm:text-2xl font-semibold mb-2'>

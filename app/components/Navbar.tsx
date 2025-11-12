@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
-import Logo from "../../public/Logo.png";
 import Link from "next/link";
 import { ChevronDownIcon, Moon, Sun, Menu, X } from "lucide-react";
 import { useTheme } from "../context/ThemeContext";
@@ -40,12 +39,16 @@ const Navbar: React.FC = () => {
   return (
     <nav
       className={`w-full flex justify-between items-center px-6 md:px-20 py-4 ${
-        theme === "light" ? "bg-white text-black" : "bg-gray-900 text-white"
+        theme === "light" ? "bg-white text-black" : "bg-black text-white"
       } fixed top-0 z-50 shadow-md`}>
       {/* Logo */}
       <div>
         <Link href={"/"} className='flex items-center'>
-          <Image src={Logo} alt='Logo' className='w-25' />
+          {theme === "light" ? (
+            <Image src='/Logo.png' alt='Logo' width={105} height={25} />
+          ) : (
+            <Image src='/DarkLogo.jpg' alt='Dark Logo' width={85} height={25} />
+          )}
         </Link>
       </div>
 
@@ -68,7 +71,7 @@ const Navbar: React.FC = () => {
               About Agency
             </Link>
             <Link
-              href='/about-me'
+              href='/about-ceo'
               className={`block px-3 py-2 rounded-md hover:bg-gray-100 ${
                 theme === "dark" ? "hover:bg-gray-700" : ""
               } transition`}>
@@ -83,9 +86,9 @@ const Navbar: React.FC = () => {
           Services
         </Link>
         <Link
-          href='/portfolio'
+          href='/pricing'
           className='font-semibold hover:underline transition-all'>
-          Portfolio
+          Pricing
         </Link>
         <Link
           href='/testimonials'

@@ -59,19 +59,24 @@ const AboutAgency = () => {
             About VIZL Web Agency
           </h2>
           <p className='mb-4'>
-            VIZL Web Agency specializes in creating **modern, responsive, and
-            high-performing websites**. We provide end-to-end **web development
-            services** including:
+            VIZL Web Agency specializes in creating modern, responsive, and
+            high-performing websites. We provide end-to-end web development
+            services including:
           </p>
           <ul className='list-disc list-inside space-y-2'>
             <li>Responsive Web Design</li>
             <li>Front-end & Back-end Development</li>
             <li>Full-Stack Web Applications</li>
             <li>SEO Optimization & Social Media Integration</li>
+            <li>Full Fletched Ecommerce Store</li>
+            <li>Shopify Store Mangement, Development</li>
             <li>Custom Web Solutions tailored to your business needs</li>
           </ul>
           <div className='mt-5'>
-            <GlowButton text='See Our Projects' link='/portfolio' />
+            <GlowButton
+              text="See CEO'S Profile"
+              link='https://deft-druid-58a41e.netlify.app/'
+            />
           </div>
         </div>
 
