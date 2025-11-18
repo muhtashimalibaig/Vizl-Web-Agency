@@ -16,6 +16,9 @@ export async function POST(req: NextRequest) {
       },
     });
 
+    const transporterStatus = await transporter.verify();
+    console.log("Transporter Connected:", transporterStatus);
+
     // Send the email
     await transporter.sendMail({
       from: `"VizlWeb" <${process.env.SMTP_USER}>`,
