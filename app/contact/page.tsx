@@ -77,6 +77,7 @@ const ContactSection = () => {
       });
 
       const data = await res.json();
+      console.log(data, '-----DATA-----');
 
       if (data.success) {
         alert("✅ Message sent successfully!");
